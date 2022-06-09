@@ -7,6 +7,18 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+    
+        <Grid Background="Aquamarine" >
+            <StackPanel>
+                <Button Content="Курсы" Margin="10"/>
+                <Button Content="Сотрудники" Click="ShowWorkers" Margin="10"/>                
+            </StackPanel>            
+        </Grid>
+
+        <Frame Grid.Column="1" x:Name="myFrame" NavigationUIVisibility ="Hidden"/>
     </Grid>
 </Window>

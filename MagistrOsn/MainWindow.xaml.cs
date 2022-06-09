@@ -23,6 +23,12 @@ namespace MagistrOsn
         public MainWindow()
         {
             InitializeComponent();
+            myFrame.Navigate(new TeacherPage());
+        }
+
+        private void ShowWorkers(object sender, RoutedEventArgs e)
+        {
+            myFrame.Navigate(new TeacherPage());
         }
     }
 }

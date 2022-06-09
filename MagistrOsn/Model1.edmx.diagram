@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b4aece44c5894f0186204b59eadf9bbd" Name="Diagram1">
+        <EntityTypeShape EntityType="MagistrDBModel.Activity" Width="1.5" PointX="3" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagistrDBModel.ClassBook" Width="1.5" PointX="5.25" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagistrDBModel.GradesOfStudent" Width="1.5" PointX="7.5" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagistrDBModel.Group" Width="1.5" PointX="5.25" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagistrDBModel.Pasport" Width="1.5" PointX="1.5" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagistrDBModel.Positions" Width="1.5" PointX="1.5" PointY="18" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagistrDBModel.Student" Width="1.5" PointX="0.75" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagistrDBModel.StudentsOfGroup" Width="1.5" PointX="9.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagistrDBModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagistrDBModel.Topic" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagistrDBModel.Worker" Width="1.5" PointX="0.75" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagistrDBModel.Сourse" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="MagistrDBModel.FK_Activity_Topic" ManuallyRouted="false" />
+        <AssociationConnector Association="MagistrDBModel.FK_ClassBook_Activity" ManuallyRouted="false" />
+        <AssociationConnector Association="MagistrDBModel.FK_GradesOfStudent_Activity" ManuallyRouted="false" />
+        <AssociationConnector Association="MagistrDBModel.FK_GradesOfStudent_ClassBook" ManuallyRouted="false" />
+        <AssociationConnector Association="MagistrDBModel.FK_StudentsOfGroup_GradesOfStudent" ManuallyRouted="false" />
+        <AssociationConnector Association="MagistrDBModel.FK_Group_Сourse" ManuallyRouted="false" />
+        <AssociationConnector Association="MagistrDBModel.FK_StudentsOfGroup_Group" ManuallyRouted="false" />
+        <AssociationConnector Association="MagistrDBModel.FK_Student_Pasport" ManuallyRouted="false" />
+        <AssociationConnector Association="MagistrDBModel.FK_Worker_Positions" ManuallyRouted="false" />
+        <AssociationConnector Association="MagistrDBModel.FK_StudentsOfGroup_Student" ManuallyRouted="false" />
+        <AssociationConnector Association="MagistrDBModel.FK_Сourse_Worker" ManuallyRouted="false" />
+        <AssociationConnector Association="MagistrDBModel.StudentsOfCourse" ManuallyRouted="false" />
+        <AssociationConnector Association="MagistrDBModel.TopicsOfCourse" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
